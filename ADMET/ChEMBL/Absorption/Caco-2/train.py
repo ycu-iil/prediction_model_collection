@@ -18,7 +18,7 @@ def get_parser():
         usage=f'ex.) python {os.path.basename(__file__)} -o lgb_caco-2'
     )
     parser.add_argument(
-        '-o', '--output', type=str, required=True,
+        '-o', '--output', type=str, required=False, default='lgb_caco-2',
         help='file name of the output model'
         )
     return parser.parse_args()
