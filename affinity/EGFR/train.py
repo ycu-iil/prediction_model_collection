@@ -31,7 +31,7 @@ def calculate_scores(model, X, y, cv):
         'r2':'r2',
         'MAE': 'neg_mean_absolute_error',
         'MSE': 'neg_mean_squared_error',
-        'RMSE': 'neg_mean_squared_error'
+        'RMSE': 'neg_root_mean_squared_error'
         }
     scores = cross_validate(model, X, y,
                             cv=cv, scoring=scoring, n_jobs=-1)
@@ -78,7 +78,7 @@ def main():
     fit_params = {
         'verbose': 0,
         'early_stopping_rounds': 10,
-        'eval_metric': 'rmse',
+        'eval_metric': 'mean_squared_error',
         'eval_set': [(X, y)]
         }
     cv = KFold(n_splits=5, shuffle=True, random_state=seed)
