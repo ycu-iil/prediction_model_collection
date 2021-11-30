@@ -96,6 +96,10 @@ def main():
     model.set_params(**best_params)
     model.fit(X, y)
 
+    # Save best parameters
+    with open('best_parameters.pkl', mode='wb') as f:
+        pickle.dump(best_params, f)
+
     # Model evaluation
     accuracy = calculate_scores(model, X, y, cv)
     accuracy.to_csv('accuracy.csv')
