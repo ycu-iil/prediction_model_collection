@@ -2,8 +2,8 @@
 
 ## Description
 
->`Dataset Description`: Aqeuous solubility measures a drug's ability to dissolve in water. Poor water solubility could lead to slow drug absorptions, inadequate bioavailablity and even induce toxicity. More than 40% of new chemical entities are not soluble.
->`Task Description`: Regression. Given a drug SMILES string, predict the activity of solubility.lipophilicity.
+>`Dataset Description`: Aqeuous solubility measures a drug's ability to dissolve in water. Poor water solubility could lead to slow drug absorptions, inadequate bioavailablity and even induce toxicity. More than 40% of new chemical entities are not soluble.  
+>`Task Description`: Regression. Given a drug SMILES string, predict the activity of solubility.lipophilicity.  
 >`Dataset Statistics`: 9,982 drugs.
 
 ## LightGBM model performance
