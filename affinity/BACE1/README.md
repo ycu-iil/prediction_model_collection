@@ -38,3 +38,11 @@ https://github.com/deepchem/deepchem/tree/master/examples/bace
 <div align="left">
       <img src="img/scatter_plot.png" width="400">
 </div>
+
+## Distribution of predicted values
+
+The following figure shows the distribution of predicted values for 10000 compounds randomly selected from the ZINC database.
+
+<div align="left">
+    <img src="img/pred_distribution.png" width="400">
+</div>
