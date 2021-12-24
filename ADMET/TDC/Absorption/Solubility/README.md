@@ -12,8 +12,16 @@
 |:----:|:----:|:----:|:----:|:----:|
 |0.85|0.72|0.88|1.53|1.23|
 
-<div align="center">
+<div align="left">
     <img src="./img/scatter_plot.png" width="400" height="400">
+</div>
+
+## Distribution of predicted values
+
+The following figure shows the distribution of predicted values for 10,000 compounds randomly selected from the ZINC database.
+
+<div align="left">
+    <img src="img/pred_distribution.png" width="400">
 </div>
 
 ## References
