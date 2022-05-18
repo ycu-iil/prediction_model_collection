@@ -12,6 +12,8 @@ from sklearn.model_selection import cross_val_predict, KFold
 
 
 def make_scatter_plot(y_true, y_pred):
+    max_val = max(max(y_true, y_pred, key=max))
+    min_val = min(min(y_true, y_pred, key=min))
     fig, ax = plt.subplots(figsize=(6, 6))
     ax.scatter(y_pred, y_true, marker='o', s=25, c='dimgray', alpha=0.2)
     ax.set_xlabel('Predicted value', fontsize=20, labelpad=20, weight='bold')
@@ -20,6 +22,8 @@ def make_scatter_plot(y_true, y_pred):
     ax.yaxis.set_tick_params(direction='out', labelsize=15, width=3, pad=10)
     ax.xaxis.set_major_locator(mpl.ticker.MultipleLocator(1))
     ax.yaxis.set_minor_locator(mpl.ticker.MultipleLocator(1))
+    ax.set_xlim(min_val-0.25, max_val+0.25)
+    ax.set_ylim(min_val-0.25, max_val+0.25)
     ax.set_aspect('equal')
     ax.grid()
     for axis in ['top','bottom','left','right']:
