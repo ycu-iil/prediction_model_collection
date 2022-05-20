@@ -1,5 +1,6 @@
 import os
 import pickle
+from decimal import Decimal, ROUND_HALF_UP
 
 from lightgbm import LGBMRegressor
 import matplotlib as mpl
@@ -13,6 +14,7 @@ from sklearn.model_selection import cross_val_predict, KFold
 def make_scatter_plot(y_true, y_pred):
     max_val = max(max(y_true, y_pred, key=max))
     min_val = min(min(y_true, y_pred, key=min))
+    corrcoef = np.corrcoef(y_true, y_pred)[0][1]
     fig, ax = plt.subplots(figsize=(6, 6))
     ax.scatter(y_pred, y_true, marker='o', s=25, c='dimgray', alpha=0.2)
     ax.set_xlabel('Predicted pChEMBL value', fontsize=20, labelpad=20, weight='normal')
@@ -25,6 +27,10 @@ def make_scatter_plot(y_true, y_pred):
     ax.set_ylim(min_val-0.25, max_val+0.25)
     ax.set_aspect('equal')
     ax.grid()
+    ax.text(0.8, 0.15,
+        f"R = {Decimal(str(corrcoef)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)}",
+        transform=ax.transAxes, ha='center', va='center', fontsize=15,
+        bbox=(dict(boxstyle='square', fc='white', ec='black', lw='1')))
     for axis in ['top','bottom','left','right']:
         ax.spines[axis].set_linewidth(2)
     return fig
