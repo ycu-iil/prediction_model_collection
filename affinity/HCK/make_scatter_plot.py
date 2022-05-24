@@ -29,7 +29,7 @@ def make_scatter_plot(y_true, y_pred):
     ax.grid()
     ax.text(0.8, 0.15,
         f"R = {Decimal(str(corrcoef)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)}",
-        transform=ax.transAxes, ha='center', va='center', fontsize=15,
+        transform=ax.transAxes, ha='center', va='center', fontsize=20,
         bbox=(dict(boxstyle='square', fc='white', ec='black', lw='1')))
     for axis in ['top','bottom','left','right']:
         ax.spines[axis].set_linewidth(2)
