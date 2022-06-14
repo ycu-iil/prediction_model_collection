@@ -10,7 +10,7 @@
 
 |Corr Coef|R2|MAE|MSE|RMSE|
 |:----:|:----:|:----:|:----:|:----:|
-|0.85|0.72|0.88|1.53|1.23|
+|0.85|0.72|0.88|1.5|1.2|
 
 <div align="left">
     <img src="./img/scatter_plot.png" width="400" height="400">

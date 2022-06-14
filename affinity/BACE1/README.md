@@ -33,7 +33,7 @@ https://github.com/deepchem/deepchem/tree/master/examples/bace
 
 |Corr Coef|R2|MAE|MSE|RMSE|
 |:----:|:----:|:----:|:----:|:----:|
-|0.86|0.74|0.49|0.45|0.67|
+|0.87|0.75|0.50|0.45|0.67|
 
 <div align="left">
       <img src="img/scatter_plot.png" width="400">

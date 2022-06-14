@@ -12,7 +12,7 @@ https://tdcommons.ai/single_pred_tasks/tox/
 
 |Corr Coef|R2|MAE|MSE|RMSE|
 |:----:|:----:|:----:|:----:|:----:|
-|0.77|0.60|0.43|0.36|0.60|
+|0.78|0.60|0.44|0.36|0.60|
 
 <div align="left">
     <img src="./img/scatter_plot.png" width="400">
