@@ -17,14 +17,10 @@ A simplified directory structure is shown below.
 
 ```
 ├── ChEMBL
-│   ├── Absorption
-│   │   └── Caco-2
-│   └── Metabolism
-│       └── HLM
+│   ├── Permeability
+│   └── Metabolic_stability
 ├── TDC
-│   ├── Absorption
-│   │   └── Solubility
+│   ├── Solubility
 │   └── Toxicity
-│       └── Acute_Toxicity_LD50
 └── README.md
 ```
