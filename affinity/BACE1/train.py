@@ -62,7 +62,7 @@ def main():
 
     args = get_parser()
     # Data preparation
-    df = pd.read_csv('./data/desc_canvas_aug30.csv', sep=',')
+    df = pd.read_csv('./../data/desc_canvas_aug30.csv', sep=',')
     mols = [Chem.MolFromSmiles(smi) for smi in df['mol']]
     fps = [AllChem.GetMorganFingerprintAsBitVect(mol, 2, 2048) for mol in mols]
     X = np.array(fps)

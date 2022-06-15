@@ -63,7 +63,7 @@ def main():
     args = get_parser()
 
     # Data preparation
-    suppl = Chem.SDMolSupplier("./data/ChEMBL_EGFR_selectivity_data.sdf")
+    suppl = Chem.SDMolSupplier("./../data/ChEMBL_EGFR_selectivity_data.sdf")
     mols = []
     values = []
     for mol in suppl:

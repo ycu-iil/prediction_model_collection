@@ -62,7 +62,7 @@ def main():
 
     args = get_parser()
     # Data preparation
-    suppl = Chem.SDMolSupplier('./data/ChEMBL_EGFR.sdf')
+    suppl = Chem.SDMolSupplier('./../data/ChEMBL_EGFR.sdf')
     fps = [AllChem.GetMorganFingerprintAsBitVect(mol, 2, 2048) for mol in suppl]
     values = []
     for mol in suppl:
