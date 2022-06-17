@@ -3,7 +3,7 @@
 ## Contents
 
 LightGBM regression models that predict inhibitory activity for the following 12 proteins:
-- Tyrosine-protein kinase ABL (ABL)
+- Abelson tyrosine-protein kinase (ABL)
 - $\beta$-secretase 1 (BACE1)
 - Epidermal growth factor receptor (EGFR)
 - Ephrin type-B receptor 4 (EPHB4)
@@ -11,9 +11,9 @@ LightGBM regression models that predict inhibitory activity for the following 12
 - Receptor protein-tyrosine kinase erbB-4 (ERBB4)
 - Fibroblast growth factor receptor 1 (FGFR1)
 - Tyrosine-protein kinase HCK (HCK)
-- Tyrosine-protein kinase LCK (LCK)
+- Tyrosine-protein kinase Lck (LCK)
 - Platelet-derived growth factor receptor beta (PDGFRbeta)
-- Tyrosine-protein kinase SRC (SRC)
+- Proto-oncogene tyrosine-protein kinase Src (SRC)
 - Vascular endothelial growth factor receptor 2 (VEGFR2)
 
 ## Datasets
