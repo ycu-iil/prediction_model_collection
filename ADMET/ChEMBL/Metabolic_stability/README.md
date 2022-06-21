@@ -1,4 +1,4 @@
-# Metabolic stability in human liver microsomes(HLM).
+# Metabolic stability in human liver microsomes　(HLM).
 
 ## Task
 
@@ -26,7 +26,7 @@
         python train.py -o lgb_hlm
         ```
 
-## Accuracy
+## LightGBM model performance
 
 |Corr Coef|R2|MAE|MSE|RMSE|
 |:----:|:----:|:----:|:----:|:----:|

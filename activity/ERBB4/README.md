@@ -26,7 +26,7 @@
         python train.py -o lgb_erbb4
         ```
 
-## Accuracy
+## LightGBM model performance
 
 |Corr Coef|R2|MAE|MSE|RMSE|
 |:----:|:----:|:----:|:----:|:----:|

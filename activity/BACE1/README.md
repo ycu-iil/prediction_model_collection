@@ -29,7 +29,7 @@ https://github.com/deepchem/deepchem/tree/master/examples/bace
         python train.py -o lgb_bace1
         ```
 
-## Accuracy
+## LightGBM model performance
 
 |Corr Coef|R2|MAE|MSE|RMSE|
 |:----:|:----:|:----:|:----:|:----:|
