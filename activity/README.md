@@ -20,12 +20,6 @@ LightGBM regression models that predict inhibitory activity for the following 12
 
 Training data for each model is placed in `./data/`.
 
-### `desc_canvas_aug30.csv`
-
-- Content: Molecules with SMILES and their pIC50 value to BACE1.
-
-- Source: https://github.com/deepchem/deepchem/tree/master/datasets
-
 ### `ChEMBL_EGFR.sdf`
 
 - Content: Molecules with SMILES and their pChEMBL value, which is equivalent to the pIC50, to EGFR.
@@ -37,3 +31,9 @@ Training data for each model is placed in `./data/`.
 - Content: Molecules with SMILES and their pChEMBL value to the following 11 proteins: ABL, EPHB4, ERBB2, ERBB4, FGFR1, HCK, LCK, PDGFRbeta, SRC, and VEGFR2.
 
 - Source: ChEMBL 28
+
+### `desc_canvas_aug30.csv`
+
+- Content: Molecules with SMILES and their pIC50 value to BACE1.
+
+- Source: https://github.com/deepchem/deepchem/tree/master/datasets

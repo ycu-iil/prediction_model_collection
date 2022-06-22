@@ -4,10 +4,10 @@
 
 LightGBM regression models that predict the following four ADMET properties:
 
-- Caco-2 permeability (Caco-2)
-- Metabolic stability in human liver microsomes (HLM)
+- Caco-2 permeability
+- Metabolic stability in human liver microsomes
 - Solubility
-- Oral rat acute toxicity (Acute_Toxicity_LD50)
+- Oral rat acute toxicity
 
 ## Directory Structure
 
