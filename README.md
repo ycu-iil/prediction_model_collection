@@ -53,3 +53,8 @@ conda install -c conda-forge rdkit=2021.03.5 pytdc=0.3.2 lightgbm=3.2.1 optuna=2
 ## License
 
 This package is distributed under the MIT License.
+
+## Contact
+
+- Tatsuya Yoshizawa (w225435a@yokohama-cu.ac.jp)
+- Shoichi Ishida (ishida.sho.nm@yokohama-cu.ac.jp)
