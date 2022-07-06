@@ -1,11 +1,10 @@
 input:
   path: ../data/result_C1.0.csv
-  col_name: smiles
+  col_name: smiles   # When using a csv file, please assign a column name that contains SMILES strings
 
 reference:
   path: ../activity/data/ChEMBL_EGFR.sdf
-  # path: ../data/250k_rndm_zinc_drugs_clean.smi
-  #   col_name: smiles
+  # col_name:
 
 AD:
   # Three types of AD definitions are available,
