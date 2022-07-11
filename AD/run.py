@@ -8,7 +8,7 @@ from mordred import Calculator, descriptors
 import pandas as pd
 from rdkit import Chem
 from rdkit.Chem import AllChem
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 
 from categorizer import tanimoto_similarity_based, euclidean_distance_based, cosine_similarity_based
 
@@ -24,11 +24,10 @@ def get_parser():
     return parser.parse_args()
 
 
-def minmax_scaler(array1, array2):
-    scaler = MinMaxScaler()
-    array = np.concatenate([array1, array2])
-    array_scaled = scaler.fit_transform(array)
-    return array_scaled[:len(array1)], array_scaled[len(array1):]
+def standard_scaler(array):
+    scaler = StandardScaler()
+    scaled_array = scaler.fit_transform(array)
+    return scaled_array
 
 
 def descriptors_calculator(mols):
@@ -91,14 +90,16 @@ def main():
 
     elif ad_params['type'] == 'Euclidean_distance-based':
         mrd_raw = descriptors_calculator(mols)
+        mrd = standard_scaler(mrd_raw)
         ref_mrd_raw = descriptors_calculator(ref_mols)
-        mrd, ref_mrd = minmax_scaler(mrd_raw, ref_mrd_raw)
+        ref_mrd = standard_scaler(ref_mrd_raw)
         result = [euclidean_distance_based(m, ref_mrd, conf) for m in mrd]
 
     elif ad_params['type'] == 'Cosine_similarity':
         mrd_raw = descriptors_calculator(mols)
+        mrd = standard_scaler(mrd_raw)
         ref_mrd_raw = descriptors_calculator(ref_mols)
-        mrd, ref_mrd = minmax_scaler(mrd_raw, ref_mrd_raw)
+        ref_mrd = standard_scaler(ref_mrd_raw)
         result = [cosine_similarity_based(m, ref_mrd, conf) for m in mrd]
 
     else:
